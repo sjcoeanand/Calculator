@@ -1,5 +1,6 @@
 function clearData () {
-    document.getElementById('result').value=""
+    document.getElementById('result').value="";
+    document.getElementById('output').innerHTML="";
 }
 
 function clickedvalue(me) {
