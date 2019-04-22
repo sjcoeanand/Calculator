@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media.net</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="calculator" id="calc">
+
+            <div class="result-block">
+                <div class="keypad-row">
+                    <div class="cta">
+                        <div class="details">
+                            <a href="#"><img src="assets/help.png"></a>
+                        </div>
+                        <div class="theme">
+                            <a href="#" id="switch-theme" onclick="addClass()"><img id="switch-img" src="assets/night-mode.png"></a>
+                        </div>
+                    </div>
+                    <div class="result">
+                        <div class="result-screen">
+                            <input type="text" id="result" placeholder="">
+                            <div class="result-data" id="output"></div>
+                        </div>
+                    </div>
+                    <div class="keypad-cta">
+                        <div class="keypad--item history">
+                            <div class="empty-bg"></div>
+                            <input type="button" value="HISTORY" onclick="showData()">
+                        </div>
+                        <div class="keypad--item cancel-item">
+                            <div class="empty-bg"></div>
+                            <input type="button" onclick="sliceValue()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="keypad-block">
+                <div class="keypad-row">
+                    <div class="keypad--item">
+                        <diV class="circles"><input type="button" id="clear-screen" onclick="clearData()">
+                        </div>
+                    </div>
+                    <div class="keypad--item">
+                        <diV class="circles"><input type="button" id="add-subtract" value="+"
+                                onclick="clickedvalue(value)">
+                        </div>
+                    </div>
+                    <div class="keypad--item">
+                        <diV class="circles"><input type="button" value="%" id="percentage"
+                                onclick="clickedvalue(value)">
+                        </div>
+                    </div>
+                    <div class="keypad--item">
+                        <diV class="circles"><input type="button" value="/" id="divide" onclick="clickedvalue(value)">
+                        </div>
+                    </div>
+                </div>
+                <div class="keypad-row">
+                    <div class="keypad--item">
+                        <diV class="circles">
+                            <input type="button" value="7" onclick="clickedvalue(value)">
+                        </div>
+                    </div>
+                    <div class="keypad--item">
+                        <diV class="circles"><input type="button" value="8" onclick="clickedvalue(value)">
+                        </div>
+                    </div>
+                    <div class="keypad--item">
+                        <diV class="circles"><input type="button" value="9" onclick="clickedvalue(value)">
+                        </div>
+                    </div>
+                    <div class="keypad--item">
+                        <diV class="circles"><input type="button" value="*" id="multiply" onclick="clickedvalue(value)">
+                        </div>
+                    </div>
+                </div>
+                <div class="keypad-row">
+                    <div class="keypad--item">
+                        <diV class="circles"><input type="button" value="4" onclick="clickedvalue(value)">
+                        </div>
+                    </div>
+                    <div class="keypad--item">
+                        <diV class="circles"><input type="button" value="5" onclick="clickedvalue(value)">
+                        </div>
+                    </div>
+                    <div class="keypad--item">
+                        <diV class="circles"><input type="button" value="6" onclick="clickedvalue(value)">
+                        </div>
+                    </div>
+                    <div class="keypad--item">
+                        <diV class="circles"><input type="button" value="-" id="substract"
+                                onclick="clickedvalue(value)">
+                        </div>
+                    </div>
+                </div>
+                <div class="keypad-row">
+                    <div class="keypad--item">
+                        <diV class="circles"><input type="button" value="1" onclick="clickedvalue(value)">
+                        </div>
+                    </div>
+                    <div class="keypad--item">
+                        <diV class="circles">
+                            <input type="button" value="2" onclick="clickedvalue(value)">
+                        </div>
+                    </div>
+                    <div class="keypad--item">
+                        <diV class="circles">
+                            <input type="button" value="3" onclick="clickedvalue(value)">
+                        </div>
+                    </div>
+                    <div class="keypad--item">
+                        <diV class="circles">
+                            <input type="button" id="add" value="+" onclick="clickedvalue(value)">
+                        </diV>
+                    </div>
+                </div>
+                <div class="keypad-row">
+                    <div class="keypad--item">
+                        <diV class="circles">
+                            <input type="button" value="0" onclick="clickedvalue(value)">
+                        </div>
+                    </div>
+
+                    <div class="keypad--item">
+                        <diV class="circles"><input type="button" id="period" value="." onclick="clickedvalue(value)">
+                        </div>
+                    </div>
+                    <div class="keypad--item">
+                        <diV class="circles"><input type="button" id="answer" onclick="solve()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

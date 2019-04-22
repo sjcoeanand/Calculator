@@ -1,0 +1,282 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(-143deg, #FFC7A6 2%, #FFEDC2 100%, #FFEEC3 100%);
+}
+
+.main {
+    background-size: cover;
+    height: 100vh;
+
+    .calculator {
+        margin: auto;
+        margin-top: 30px;
+        width: 304px;
+        box-shadow: 0 2px 21px 0 rgba(0, 0, 0, 0.50);
+        background-color: #fff;
+
+        &.dark-theme {
+            background-color: #000;
+
+            .result-block {
+                background-image: url(../assets/Bitmap.png);
+            }
+
+            .keypad-block {
+                .keypad-row {
+                    .keypad--item {
+                        &:last-child {
+                            background: #1D1C1A;
+                            box-shadow: none;
+                        }
+
+                        .circles {
+                            background-image: linear-gradient(-180deg, #959595 0%, #737373 100%);
+                            box-shadow: 0 2px 6px 0 rgba(191, 191, 191, 0.50);
+                            filter: none;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        .result-block {
+            background-image: url(../assets/bg.png);
+            background-position: top;
+            background-size: cover;
+
+
+            .keypad-row {
+                .cta {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+                }
+
+                .result {
+                    .result-screen {
+                        text-align: right;
+                        padding-right: 20px;
+
+                        input {
+                            height: 35px;
+                            background-color: transparent;
+                            text-align: right;
+                            border: 0;
+                            font-size: 22px;
+                            width: 95%;
+                            color: #E1E1E1;
+                            letter-spacing: 2.93px;
+
+                        }
+
+                        .result-data {
+                            height: 35px;
+                            font-size: 29px;
+                            color: #FFFFFF;
+                            letter-spacing: 3.87px;
+                            font-weight: bold;
+                            margin-bottom: 36px;
+                        }
+                    }
+                }
+
+                .keypad-cta {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .keypad--item {
+                        width: 49%;
+                        font-size: 12px;
+                        color: #F5A623;
+                        padding: 10px;
+                        position: relative;
+
+                        .empty-bg {
+                            position: absolute;
+                            height: 40px;
+                            width: 150px;
+                            left: 0;
+                            top: -5px;
+                            opacity: 0.11;
+                            background-color: #000;
+                        }
+
+                        input {
+                            position: relative;
+                            z-index: 2;
+                            width: 100%;
+                            background-color: transparent;
+                            border: 0;
+                            color: #F5A623;
+                            font-size: 12px;
+                            font-weight: bold;
+                            letter-spacing: 1.6px;
+                            display: block;
+                            margin: auto;
+                            cursor: pointer;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        &.cancel-item {
+                            text-align: center;
+                            font-size: 12px;
+                            background-image: url("../assets/Group-4.png");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .keypad-block {
+            .keypad-row {
+                display: flex;
+                justify-content: space-between;
+
+                &:last-child {
+                    filter: none;
+
+                    .keypad--item {
+                        &:first-child {
+                            .circles {
+                                width: 113px;
+                                border-radius: 16px;
+                            }
+                        }
+
+                        &:last-child .circles {
+                            background-image: linear-gradient(-180deg, #FAD961 0%, #F7AE1C 100%);
+
+                            input {
+                                filter: none;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                &:first-child {
+                    .keypad--item {
+                        padding-top: 26px;
+                    }
+                }
+
+                &:last-child {
+                    .keypad--item {
+                        padding-bottom: 26px;
+                    }
+                }
+
+                .keypad--item {
+                    padding: 0px 20px 10px;
+
+                    &:last-child {
+                        background: #F8F8F8;
+                        box-shadow: inset 3px 0 10px 0 rgba(217, 217, 217, 0.23);
+                    }
+
+                    .circles {
+                        width: 35px;
+                        height: 35px;
+                        background-image: linear-gradient(-180deg, #EEEEEE 0%, #FFFFFF 100%);
+                        box-shadow: 0 2px 6px 0 #d7d7d7;
+                        border: 0;
+                        border-radius: 50%;
+
+                        &:active {
+                            transform: translateY(1px);
+                            border-bottom-width: 2px;
+                            background-image: linear-gradient(-134deg, #2B59F3 0%, #5F2AD8 100%);
+                            box-shadow: 0 2px 6px 0 rgba(191, 191, 191, 0.50);
+
+                            input {
+                                filter: none;
+                                color: #fff;
+                            }
+                        }
+
+                        input {
+
+                            cursor: pointer;
+                            position: relative;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            border: 0;
+                            background-color: transparent;
+                            margin: auto;
+                            display: block;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            width: 100%;
+                            height: 100%;
+                            margin-right: 10px;
+                            filter: invert(100%);
+                            font-size: 18px;
+                            color: #FFFFFF;
+                            letter-spacing: 0.77px;
+
+                            &:focus {
+                                outline: 0;
+                                border: 0;
+                            }
+                        }
+                    }
+
+
+
+
+                    #clear-screen {
+                        background-image: url("../assets/c.png");
+                    }
+
+                    #add-subtract {
+                        background-image: url("../assets/-.png");
+                        color: transparent;
+                    }
+
+                    #percentage {
+                        background-image: url("../assets/%.png");
+                        color: transparent;
+                    }
+
+                    #divide {
+                        background-image: url("../assets/Group-2.png");
+                        color: transparent;
+                    }
+
+                    #multiply {
+                        background-image: url("../assets/x.png");
+                        color: transparent;
+                    }
+
+                    #substract {
+                        background-image: url("../assets/Rectangle.png");
+                        color: transparent;
+                    }
+
+                    #add {
+                        background-image: url("../assets/+.png");
+                        color: transparent;
+                    }
+
+                    #period {
+                        background-image: url("../assets/..png");
+                        color: transparent;
+                    }
+
+                    #answer {
+                        background-image: url("../assets/=.png");
+                    }
+                }
+            }
+        }
+    }
+}
