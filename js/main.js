@@ -8,7 +8,7 @@ function clickedvalue(me) {
 }
 
 function solve(){
-    if(document.getElementById('output').value === ""){
+    if(document.getElementById('result').value === ""){
         e.preventDefault(e);
     }
     else{

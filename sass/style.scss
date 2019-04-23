@@ -127,7 +127,7 @@ body {
                         &.cancel-item {
                             text-align: center;
                             font-size: 12px;
-                            background-image: url("../assets/Group-4.png");
+                            background-image: url("../assets/backspace.png");
                             background-repeat: no-repeat;
                             background-position: center;
                         }
@@ -234,26 +234,26 @@ body {
 
 
                     #clear-screen {
-                        background-image: url("../assets/c.png");
+                        background-image: url("../assets/clear.png");
                     }
 
                     #add-subtract {
-                        background-image: url("../assets/-.png");
+                        background-image: url("../assets/subtract.png");
                         color: transparent;
                     }
 
                     #percentage {
-                        background-image: url("../assets/%.png");
+                        background-image: url("../assets/percent.png");
                         color: transparent;
                     }
 
                     #divide {
-                        background-image: url("../assets/Group-2.png");
+                        background-image: url("../assets/divide.png");
                         color: transparent;
                     }
 
                     #multiply {
-                        background-image: url("../assets/x.png");
+                        background-image: url("../assets/multiply.png");
                         color: transparent;
                     }
 
@@ -263,17 +263,17 @@ body {
                     }
 
                     #add {
-                        background-image: url("../assets/+.png");
+                        background-image: url("../assets/plus.png");
                         color: transparent;
                     }
 
                     #period {
-                        background-image: url("../assets/..png");
+                        background-image: url("../assets/period.png");
                         color: transparent;
                     }
 
                     #answer {
-                        background-image: url("../assets/=.png");
+                        background-image: url("../assets/equal.png");
                     }
                 }
             }
